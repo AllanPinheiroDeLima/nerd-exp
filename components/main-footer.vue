@@ -1,6 +1,11 @@
 <template>
   <footer class="has-text-white">
-    <p class="is-size-7">Designed with 3 by Allan Lima</p>
+    <p class="is-size-7">Designed with
+      <b-icon
+        type="is-primary"
+        icon="heart"
+        size="is-small">
+      </b-icon> by Allan Lima</p>
   </footer>
 </template>
 <script lang="ts">
