@@ -106,7 +106,7 @@ section .is-flex {
   background-size: cover;
   background-position: bottom;
   @media (min-width: 1366px) {
-    max-height: 550px
+    min-height: 550px
   }
   @media (min-width: 768px) {
     max-height: 350px
@@ -140,13 +140,13 @@ section .is-flex {
   background-size: cover;
   padding: 50px;
   @media (min-width: 1366px) {
-    min-height: 600px
+    max-height: 600px
   }
   @media (min-width: 768px) {
     min-height: 400px
   }
   @media (min-width: 0px) {
-    max-height: 300px
+    min-height: 300px
   }
 }
 .movie {
@@ -176,7 +176,7 @@ section .is-flex {
     max-height: 700px
   }
   @media (min-width: 0px) {
-    max-height: 300px
+    min-height: 300px
   }
 }
 .music {
@@ -193,7 +193,7 @@ section .is-flex {
 
   @media (min-width: 0px) {
     background-position: bottom;
-    max-height: 300px
+    min-height: 300px
   }
 }
 
