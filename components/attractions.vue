@@ -2,59 +2,44 @@
   <section class="section">
     <div class="container is-flex">
       <div class="mini-container has-text-centered">
-        <h1 class="title">Atrações</h1>
-        <h2 class="subtitle">
+        <h1 class="title is-size-1">Atrações</h1>
+        <h2 class="subtitle is-size-4">
           O <strong>Nerd Experience</strong> vai oferecer um ambiente exclusivo para que você possa se encontrar com seus ídolos e que traga o real sentimento da comunidade.
         </h2>
       </div>
     </div>
 
     <div class="tiles container">
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-8">
-            <div class="tile">
-              <div class="tile is-parent is-vertical">
-                <article class="tile is-child notification is-primary">
-                  <p class="title">Vertical...</p>
-                  <p class="subtitle">Top tile</p>
-                </article>
-                <article class="tile is-child notification is-warning">
-                  <p class="title">...tiles</p>
-                  <p class="subtitle">Bottom tile</p>
-                </article>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification is-info">
-                  <p class="title">Middle tile</p>
-                  <p class="subtitle">With an image</p>
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/640x480.png">
-                  </figure>
-                </article>
-              </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child gaming is-relative is-clipped has-rounded-border is-flex">
+            <div class="background"></div>
+            <div class="pop-text">
+              <h1 class="title has-text-white">Games Digitais e Analógicos</h1>
+              <p class="is-size-5 has-text-white">Lançamento ou Old-School, todos se encontram e se divertem com a mesma intensidade</p>
             </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-danger">
-                <p class="title">Wide tile</p>
-                <p class="subtitle">Aligned with the right tile</p>
-                <div class="content">
-                  <!-- Content -->
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
-              <div class="content">
-                <p class="title">Tall tile</p>
-                <p class="subtitle">With even more content</p>
-                <div class="content">
-                  <!-- Content -->
-                </div>
-              </div>
-            </article>
           </div>
         </div>
+
+        <div class="tile is-parent is-vertical">
+          <div class="tile is-child korea is-relative is-clipped has-rounded-border is-flex">
+            <div class="background"></div>
+            <div class="pop-text">
+              <h1 class="title has-text-white">K-POP e Cultura Oriental</h1>
+              <p class="is-size-5 has-text-white">Dance, cante e se encante com a cultura oriental. Reveja os clássicos, conheça o novo, vem com a gente</p>
+            </div>
+          </div>
+          <div class="tile is-child comics is-relative is-clipped has-rounded-border is-flex">
+            <div class="background"></div>
+            <div class="pop-text">
+              <h1 class="title has-text-white">Livros e Quadrinhos</h1>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <div class="tile is-child"><p>four</p></div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -76,9 +61,55 @@ section .is-flex {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 100px;
+  align-items: flex-end;
+  padding: 20px;
+  text-align: center;
   @media (max-width: 768px) {
     margin-bottom: 50px;
     margin-top: 0px;
   }
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  background: rgba(0,0,0,.4);
+  position: absolute;
+  backdrop-filter: blur(3px)
+}
+
+.gaming {
+  background: url('~assets/images/gaming.jpg');
+  background-size: cover;
+  @media (min-width: 1366px) {
+    min-height: 700px
+  }
+}
+
+.korea {
+  background: url('~assets/images/korea.jpg');
+  background-size: cover;
+  padding: 50px;
+  @media (min-width: 1366px) {
+    min-height: 600px
+  }
+}
+.comics {
+  background: url('~assets/images/comics.jpg');
+  background-size: cover;
+  padding: 50px;
+  @media (min-width: 1366px) {
+    min-height: 600px
+  }
+}
+
+.pop-text {
+  z-index: 2;
+}
+
+.has-rounded-border {
+  border-radius: 5px;
 }
 </style>

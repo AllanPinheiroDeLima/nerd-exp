@@ -16,18 +16,18 @@
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item is-active">
+              <a class="navbar-item is-active has-text-white">
                 Home
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item has-text-white">
                 Sobre
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item has-text-white">
                 Contato
               </a>
               <span class="navbar-item">
-                <a class="button is-primary is-inverted">
-                  <span>Comprar meu Ingresso</span>
+                <a class="button is-warning" href="https://www.sympla.com.br/nerd-experience-belo-horizonte__575732" target="_blank">
+                  <span>Garantir meu ingresso</span>
                 </a>
               </span>
             </div>
@@ -39,13 +39,16 @@
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title has-text-white">
+        <h1 class="title has-text-white is-size-1">
           Nerd Experience BH
         </h1>
-        <h2 class="subtitle has-text-white">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita, repudiandae fuga animi eveniet dolorem pariatur nemo ex dolores quaerat consequatur iusto, dicta voluptates cupiditate? Quam tempore mollitia quos expedita!
+        <h2 class="subtitle has-text-white is-size-4">
+          Viva essa experiência! <br>
+          Tudo o que você ama, reunido em um só lugar
         </h2>
-        <b-button type="is-primary">Garantir meu ingresso</b-button>
+        <a class="button is-warning is-medium" href="https://www.sympla.com.br/nerd-experience-belo-horizonte__575732" target="_blank">
+          <span>Garantir meu ingresso</span>
+        </a>
       </div>
   </div>
 </section>
@@ -67,7 +70,9 @@ export default Vue.extend({
   width: 100%;
   height: 100%;
   position: absolute;
-  mix-blend-mode: darken;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
   opacity: 0.8
 }
 </style>
+
