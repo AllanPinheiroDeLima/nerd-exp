@@ -15,6 +15,13 @@ export default Vue.extend({
 })
 </script>
 <style lang="scss" scoped>
+
+.section {
+  @media (max-width: 768px) {
+    background: rgba(240,240,240,1);
+  }
+}
+
 .section .container {
   background: rgba(240,240,240,1);
   padding: 50px 0px;

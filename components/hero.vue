@@ -3,34 +3,27 @@
     <div class="hero-background has-background-primary"></div>
     <div class="hero-head">
       <nav class="navbar">
-        <div class="container">
+        <div class="container is-flex justify-small">
           <div class="navbar-brand">
             <a class="navbar-item">
               <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active has-text-white">
-                Home
+          <div class="navbar-end is-flex">
+            <a class="navbar-item is-active has-text-white">
+              Home
+            </a>
+            <a class="navbar-item has-text-white">
+              Sobre
+            </a>
+            <a class="navbar-item has-text-white">
+              Contato
+            </a>
+            <span class="navbar-item">
+              <a class="button is-warning" href="https://www.sympla.com.br/nerd-experience-belo-horizonte__575732" target="_blank">
+                <span>Garantir meu ingresso</span>
               </a>
-              <a class="navbar-item has-text-white">
-                Sobre
-              </a>
-              <a class="navbar-item has-text-white">
-                Contato
-              </a>
-              <span class="navbar-item">
-                <a class="button is-warning" href="https://www.sympla.com.br/nerd-experience-belo-horizonte__575732" target="_blank">
-                  <span>Garantir meu ingresso</span>
-                </a>
-              </span>
-            </div>
+            </span>
           </div>
         </div>
       </nav>
@@ -73,6 +66,19 @@ export default Vue.extend({
   mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
   opacity: 0.8
+}
+
+.justify-small {
+  @media (max-width: 1280px) {
+    justify-content: space-between;
+  }
+}
+
+.navbar-item {
+  background: none !important;
+  &:hover {
+    color: #ffdd57 !important
+  }
 }
 </style>
 

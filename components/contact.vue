@@ -46,6 +46,12 @@ export default Vue.extend({
 })
 </script>
 <style lang="scss" scoped>
+.section {
+  margin-bottom: 30px;
+  @media (max-width: 768px) {
+    background: rgba(240,240,240,1);
+  }
+}
 .section .container {
   background: rgba(240,240,240,1);
   border-radius: 5px;

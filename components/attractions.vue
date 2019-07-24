@@ -108,6 +108,16 @@ section .is-flex {
   @media (min-width: 1366px) {
     max-height: 550px
   }
+  @media (min-width: 768px) {
+    max-height: 350px
+  }
+  @media (min-width: 0px) {
+    background-position: center;
+    max-height: 300px;
+    .pop-text {
+      width: 75%;
+    }
+  }
 }
 
 .korea {
@@ -117,6 +127,13 @@ section .is-flex {
   @media (min-width: 1366px) {
     min-height: 600px
   }
+  @media (min-width: 768px) {
+    min-height: 600px
+  }
+  @media (min-width: 0px) {
+    background-position: 0px -400px;
+    max-height: 300px
+  }
 }
 .comics {
   background: url('~assets/images/comics.jpg');
@@ -124,6 +141,12 @@ section .is-flex {
   padding: 50px;
   @media (min-width: 1366px) {
     min-height: 600px
+  }
+  @media (min-width: 768px) {
+    min-height: 400px
+  }
+  @media (min-width: 0px) {
+    max-height: 300px
   }
 }
 .movie {
@@ -133,6 +156,12 @@ section .is-flex {
   @media (min-width: 1366px) {
     min-height: 650px
   }
+  @media (min-width: 768px) {
+    min-height: 550px
+  }
+  @media (min-width: 0px) {
+    max-height: 300px
+  }
 }
 
 .cosplay {
@@ -140,7 +169,14 @@ section .is-flex {
   background-size: cover;
   padding: 50px;
   @media (min-width: 1366px) {
+    min-height: 600px;
     max-height: 800px
+  }
+  @media (min-width: 768px) {
+    max-height: 700px
+  }
+  @media (min-width: 0px) {
+    max-height: 300px
   }
 }
 .music {
@@ -150,6 +186,14 @@ section .is-flex {
   padding: 50px;
   @media (min-width: 1366px) {
     max-height: 800px
+  }
+  @media (min-width: 768px) {
+    max-height: 600px
+  }
+
+  @media (min-width: 0px) {
+    background-position: bottom;
+    max-height: 300px
   }
 }
 
