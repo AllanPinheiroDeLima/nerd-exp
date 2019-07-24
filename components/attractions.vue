@@ -106,14 +106,14 @@ section .is-flex {
   background-size: cover;
   background-position: bottom;
   @media (min-width: 1366px) {
-    min-height: 550px
+    max-height: 550px
+  }
+  @media (max-width: 1365px) {
+    min-height: 350px
   }
   @media (min-width: 768px) {
-    max-height: 350px
-  }
-  @media (min-width: 0px) {
     background-position: center;
-    max-height: 300px;
+    min-height: 300px;
     .pop-text {
       width: 75%;
     }
@@ -125,14 +125,14 @@ section .is-flex {
   background-size: cover;
   padding: 50px;
   @media (min-width: 1366px) {
+    max-height: 600px
+  }
+  @media (max-width: 1365px) {
     min-height: 600px
   }
-  @media (min-width: 768px) {
-    min-height: 600px
-  }
-  @media (min-width: 0px) {
+  @media (max-width: 768px) {
     background-position: 0px -400px;
-    max-height: 300px
+    min-height: 300px
   }
 }
 .comics {
@@ -142,10 +142,10 @@ section .is-flex {
   @media (min-width: 1366px) {
     max-height: 600px
   }
-  @media (min-width: 768px) {
+  @media (max-width: 1365px) {
     min-height: 400px
   }
-  @media (min-width: 0px) {
+  @media (max-width: 768px) {
     min-height: 300px
   }
 }
@@ -156,11 +156,11 @@ section .is-flex {
   @media (min-width: 1366px) {
     min-height: 650px
   }
-  @media (min-width: 768px) {
+  @media (max-width: 1365px) {
     min-height: 550px
   }
-  @media (min-width: 0px) {
-    max-height: 300px
+  @media (max-width: 768px) {
+    min-height: 300px
   }
 }
 
@@ -172,10 +172,10 @@ section .is-flex {
     min-height: 600px;
     max-height: 800px
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1365px) {
     max-height: 700px
   }
-  @media (min-width: 0px) {
+  @media (max-width: 768px) {
     min-height: 300px
   }
 }
@@ -185,13 +185,13 @@ section .is-flex {
   background-position: top left;
   padding: 50px;
   @media (min-width: 1366px) {
-    max-height: 800px
+    min-height: 500px
   }
-  @media (min-width: 768px) {
-    max-height: 600px
+  @media (max-width: 1365px) {
+    min-height: 600px
   }
 
-  @media (min-width: 0px) {
+  @media (max-width: 768px) {
     background-position: bottom;
     min-height: 300px
   }
