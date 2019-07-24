@@ -24,6 +24,7 @@ declare module "vue/types/options" {
 declare module "vue/types/vue" {
   interface Vue {
     $toast: Toast
+    $axios: any
     $dialog: any
     $loading: any
     $modal: any

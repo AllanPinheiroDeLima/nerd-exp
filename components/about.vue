@@ -1,6 +1,6 @@
 <template>
-  <section class="section">
-    <div class="container is-flex">
+  <section class="section" id="about">
+    <div class="container is-flex" >
       <div class="has-text-centered content">
         <h1 class="title">O Nerd Experience é sobre</h1>
         <p class="is-size-4">trazer aos jovens de diversas regiões do nosso estado um ambiente de intensa imersão que crie oportunidades de viver verdadeiramente o universo repleto de tecnologia, conteúdo nerd, gamer e geek</p >

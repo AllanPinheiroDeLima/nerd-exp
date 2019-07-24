@@ -10,13 +10,13 @@
             </a>
           </div>
           <div class="navbar-end is-flex">
-            <a class="navbar-item is-active has-text-white">
+            <a href="#" class="navbar-item is-active has-text-white">
               Home
             </a>
-            <a class="navbar-item has-text-white">
+            <a href="#about" class="navbar-item has-text-white">
               Sobre
             </a>
-            <a class="navbar-item has-text-white">
+            <a href="#contact" class="navbar-item has-text-white">
               Contato
             </a>
             <span class="navbar-item">
