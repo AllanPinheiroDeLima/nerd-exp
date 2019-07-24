@@ -16,7 +16,14 @@
             <div class="background"></div>
             <div class="pop-text">
               <h1 class="title has-text-white">Games Digitais e Analógicos</h1>
-              <p class="is-size-5 has-text-white">Lançamento ou Old-School, todos se encontram e se divertem com a mesma intensidade</p>
+              <p class="is-size-5 has-text-white"><i><b>New-School</b></i> ou <i><b>Old-School</b></i>, todos se encontram e se divertem com a mesma intensidade</p>
+            </div>
+          </div>
+          <div class="tile is-child cosplay is-relative is-clipped has-rounded-border is-flex">
+            <div class="background"></div>
+            <div class="pop-text">
+              <h1 class="title has-text-white">Cosplay e Moda</h1>
+              <p class="is-size-5 has-text-white">Vem trocar uma ideia com quem conhece e entende da coisa <br>  <b>Cosplayes de Minas Gerais reúnam-se</b></p>
             </div>
           </div>
         </div>
@@ -33,11 +40,25 @@
             <div class="background"></div>
             <div class="pop-text">
               <h1 class="title has-text-white">Livros e Quadrinhos</h1>
+              <p class="is-size-5 has-text-white">Sempre quis discutir o final daquele quadrinho que você adora ? Agora é a hora de você fazer isso!</p>
             </div>
           </div>
         </div>
-        <div class="tile is-parent">
-          <div class="tile is-child"><p>four</p></div>
+        <div class="tile is-parent is-vertical">
+          <div class="tile is-child movie is-clipped is-relative has-rounded-border is-flex">
+            <div class="background"></div>
+            <div class="pop-text">
+              <h1 class="title has-text-white">Filmes e Séries</h1>
+              <p class="is-size-5 has-text-white"><b>Conta comigo!</b><br> Vamos falar sobre séries, filmes e até aqueles finais de série que a gente amou ou se decepcionou</p>
+            </div>
+          </div>
+          <div class="tile is-child music is-clipped is-relative has-rounded-border is-flex">
+            <div class="background"></div>
+            <div class="pop-text">
+              <h1 class="title has-text-white">Música e Dublagem</h1>
+              <p class="is-size-5 has-text-white"><b>Não vivo sem música!</b><br> Imagina ouvir o que você gosta com gente que gosta das mesmas coisas que você!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -83,8 +104,9 @@ section .is-flex {
 .gaming {
   background: url('~assets/images/gaming.jpg');
   background-size: cover;
+  background-position: bottom;
   @media (min-width: 1366px) {
-    min-height: 700px
+    max-height: 550px
   }
 }
 
@@ -102,6 +124,32 @@ section .is-flex {
   padding: 50px;
   @media (min-width: 1366px) {
     min-height: 600px
+  }
+}
+.movie {
+  background: url('~assets/images/popcorn.jpg');
+  background-size: cover;
+  padding: 50px;
+  @media (min-width: 1366px) {
+    min-height: 650px
+  }
+}
+
+.cosplay {
+  background: url('~assets/images/cosplay.jpg');
+  background-size: cover;
+  padding: 50px;
+  @media (min-width: 1366px) {
+    max-height: 800px
+  }
+}
+.music {
+  background: url('~assets/images/music.jpg');
+  background-size: cover;
+  background-position: top left;
+  padding: 50px;
+  @media (min-width: 1366px) {
+    max-height: 800px
   }
 }
 
