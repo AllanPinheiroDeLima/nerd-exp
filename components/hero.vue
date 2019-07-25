@@ -19,7 +19,7 @@
             <a href="#contact" class="navbar-item has-text-white">
               Contato
             </a>
-            <span class="navbar-item">
+            <span class="navbar-item navbar-buy-button">
               <a class="button is-warning" href="https://www.sympla.com.br/nerd-experience-belo-horizonte__575732" target="_blank">
                 <span>Garantir meu ingresso</span>
               </a>
@@ -78,6 +78,12 @@ export default Vue.extend({
   background: none !important;
   &:hover {
     color: #ffdd57 !important
+  }
+}
+
+.navbar-buy-button {
+  @media(max-width: 768px) {
+    display: none;
   }
 }
 </style>
