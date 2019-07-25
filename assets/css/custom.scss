@@ -1,0 +1,13 @@
+@import "~bulma/sass/utilities/_all";
+
+$warning: #FF6700;
+
+$colors: (
+    "warning": ($warning, $warning-invert)
+);
+
+.button.is-warning {
+  color: white !important
+}
+
+@import "~bulma/bulma";

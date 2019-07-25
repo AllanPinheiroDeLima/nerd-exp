@@ -17,7 +17,7 @@
             <b-field label="Message">
               <b-input maxlength="600" v-model="bodyText" type="textarea"></b-input>
             </b-field>
-            <b-button type="is-primary" native-type="submit">Enviar meu email</b-button>
+            <b-button :disabled="isDisabled" type="is-primary" native-type="submit">Enviar meu email</b-button>
           </form>
         </div>
       </div>
@@ -32,11 +32,13 @@ export default Vue.extend({
     return {
       email: '',
       subject: '',
-      bodyText: ''
+      bodyText: '',
+      isDisabled: false
     }
   },
   methods: {
     async sendEmail () {
+      this.isDisabled = true
       var data = {
           service_id: 'allanpinheirodelima_gmail_com',
           template_id: 'template_axIXx3LE',
@@ -55,28 +57,19 @@ export default Vue.extend({
           message: 'Seu email foi enviado!',
           type: 'is-success'
         })
-
-        this.sendCopy()
+        this.email = ''
+        this.subject = ''
+        this.bodyText = ''
+        this.isDisabled = false
       })
-      .catch(e => this.$toast.open({
-        message: 'Algo deu errado',
-        type: 'is-danger'
-      }))
-    },
-    async sendCopy () {
-      var data = {
-        service_id: 'allanpinheirodelima_gmail_com',
-        template_id: 'template_axIXx3LE',
-        user_id: 'user_crG9HjOGXlWPo7JDkBhue',
-        template_params: {
-          'to_name': this.email,
-          'from_name': 'NerdExperience',
-          'subject': this.subject,
-          'message_html': `este email é uma cópia <br /> ${this.bodyText}`
-        }
-      };
+      .catch(e => {
+        this.isDisabled = false
+        this.$toast.open({
+          message: 'Algo deu errado',
+          type: 'is-danger'
+        })
+      })
 
-      await this.$axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
     }
   }
 })

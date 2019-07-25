@@ -1,5 +1,6 @@
 <template>
   <section>
+    <fixed-navbar />
     <hero-section />
     <attractions-section />
     <about-section />
@@ -14,6 +15,7 @@ import Attractions from '~/components/attractions.vue'
 import About from '~/components/about.vue'
 import Ticket from '~/components/ticket.vue'
 import Contact from '~/components/contact.vue'
+import FixedNavbar from '~/components/fixed-navbar.vue'
 
 export default Vue.extend({
   name: 'index',
@@ -22,7 +24,8 @@ export default Vue.extend({
     'attractions-section': Attractions,
     'about-section': About,
     'ticket-section': Ticket,
-    'contact-section': Contact
+    'contact-section': Contact,
+    'fixed-navbar': FixedNavbar
   }
 })
 </script>
