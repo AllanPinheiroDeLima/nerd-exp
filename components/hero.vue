@@ -6,7 +6,7 @@
         <div class="container is-flex justify-small">
           <div class="navbar-brand">
             <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+              <img src="~/assets/images/logo/nxp-color.png" alt="Nerd Experience">
             </a>
           </div>
           <div class="navbar-end is-flex">
@@ -85,6 +85,11 @@ export default Vue.extend({
   @media(max-width: 768px) {
     display: none;
   }
+}
+
+.navbar-item img {
+  min-height: 80px;
+  min-width: 50px;
 }
 </style>
 
