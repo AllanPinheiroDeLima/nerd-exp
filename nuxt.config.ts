@@ -13,7 +13,7 @@ const config:NuxtConfiguration = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'O Nerd Experience tem como intenção trazer aos jovens de diversas regiões do nosso estado um ambiente de intensa imersão, que gere a oportunidade de viver – verdadeiramente – um universo repleto de tecnologia, conteúdo Nerd, Gamer e Geek, um lugar onde o visitante conheça pessoas com gostos em comum, onde possa encontrar com seus ídolos e que traga o real sentimento de comunidade.'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
