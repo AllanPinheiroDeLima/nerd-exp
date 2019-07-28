@@ -6,7 +6,7 @@
         <div class="container is-flex justify-small">
           <div class="navbar-brand">
             <a class="navbar-item">
-              <img src="~/assets/images/logo/nxp-color.png" alt="Nerd Experience">
+              <img src="~/assets/images/logo/nxp-white.png" alt="Nerd Experience">
             </a>
           </div>
           <div class="navbar-end is-flex align-middle">
