@@ -9,7 +9,7 @@
               <img src="~/assets/images/logo/nxp-color.png" alt="Nerd Experience">
             </a>
           </div>
-          <div class="navbar-end is-flex">
+          <div class="navbar-end is-flex align-middle">
             <a href="#" class="navbar-item is-active has-text-white">
               Home
             </a>
@@ -90,6 +90,10 @@ export default Vue.extend({
 .navbar-item img {
   min-height: 80px;
   min-width: 50px;
+}
+
+.align-middle {
+  align-items: center
 }
 </style>
 

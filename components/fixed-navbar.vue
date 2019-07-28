@@ -1,13 +1,13 @@
 <template>
   <nav class="hero-head" v-if="showNavbar">
     <nav class="navbar">
-      <div class="container is-flex justify-small">
+      <div class="container is-flex align-justify  justify-small">
         <div class="navbar-brand">
           <a class="navbar-item">
             <img src="~/assets/images/logo/nxp-color.png" alt="Nerd Experience">
           </a>
         </div>
-        <div class="navbar-end is-flex">
+        <div class="navbar-end is-flex align-middle">
           <span class="navbar-item navbar-buy-button">
             <a class="button is-warning" href="https://www.sympla.com.br/nerd-experience-belo-horizonte__575732" target="_blank">
               <span>Garantir meu ingresso</span>
@@ -69,7 +69,13 @@ export default Vue.extend({
   }
 }
 
+.align-middle {
+  align-items: center
+}
 
+.align-justify {
+  justify-content: space-between;
+}
 
 .navbar-item img {
   min-height: 50px;

@@ -1,7 +1,8 @@
 <template>
   <section class="section is-relative" id="about">
+    <div class="background is-visible-mobile"></div>
     <div class="container is-flex is-clipped" >
-      <div class="background"></div>
+    <div class="background"></div>
       <div class="has-text-centered content">
         <h1 class="title has-text-white">O Nerd Experience é sobre</h1>
         <p class="is-size-4 has-text-white">trazer aos jovens de diversas regiões do nosso estado um ambiente de intensa imersão que crie oportunidades de viver verdadeiramente o universo repleto de tecnologia, conteúdo nerd, gamer e geek</p >
@@ -21,7 +22,6 @@ export default Vue.extend({
   @media (max-width: 768px) {
     background: url('~assets/images/1-min.jpg');
     background-size: cover;
-    background-position: 50px -100px;
   }
 }
 
@@ -32,6 +32,18 @@ export default Vue.extend({
   top: 0;
   z-index: 1;
   background: rgba(0,0,0,.6);
+  display: block;
+  @media (max-width: 768px) {
+      display: none !important;
+      left: 0;
+  }
+}
+.is-visible-mobile {
+  display: none;
+  @media (max-width: 768px) {
+      display: block !important;
+      left: 0;
+  }
 }
 
 .section .container {
@@ -40,6 +52,9 @@ export default Vue.extend({
   background-position: 50px -100px;
   padding: 50px 0px;
   border-radius: 5px;
+  @media (max-width: 768px) {
+    background: none;
+  }
 }
 
 .content {
